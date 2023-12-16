@@ -8,14 +8,19 @@ Es posible observar una mejora en rendimiento del modelo en situación de concep
 Ricardo: La presición del modelo inicial resultó 0.9, la presición del modelo con data drifting redujo a 0.89, debido a la introducción de nuevos datos aleatorios, por lo que se puede suponer que el modelo no está generalizando y se ve afectado por el cambio en las distribuciones.
 La precisón del modelo con concept drifting es de 0.97, un incremento en la precisión con los datos antes de cualquier cambio. En este caso el modelo se adaptó o generalizó correctamente el cambio en la relación entre características y target.
 
+Luis Angel : Respecto al data drifting hubo un cambio a la baja de la precision del modelo, esto puede indicar que la población con la que se entrenó el modelo en el pasado, ahora cambió en el presente; por lo que deberiamos hacer un reentrenamiento. 
+Respecto a las consecuencias del concept drift , no necesariamente debe ser algo malo, si mejora la precision del modelo podria significar que la relación entre "X" y "y" es mas estrecha, aunque debemos tener cuidado por temas de sobreajuste.
+
 5. Explica en tus palabras la evaluación del presente modelo de acuerdo a la precisión
 De acuerdo con la precisión, de 30 flores iris, el 100% fue clasificada de la manera correcta. Es decir que el modelo funciona a la perfección.
 
 Ricardo: En este caso la precisión del modelo fue de 100%, lo que indica que todas las predicciones fueron correctas para cada clase.
-
+Luis Angel: el modelo funciona bien pero deberiamos checar si no hay sobreajuste.
 
 6. Explica en tus palabras la evaluación del modelo de acuerdo a la matriz de confusión
 Debido a que, salvo por la diagonal principal, el resto de valores se encuentra en 0, es posible afirmar que
 no hubo falsos positivos ni falsos negativos. Es decir que el modelo clasificó todas las flores bien y funciona a la perfección.
 
 Ricardo: Como lo indica la precisión del modelo (100%) en la matriz de confusión se observan todos los valores en 0, fuera de la diagonal principal. Es decir, para cada clase todas las observaciones fueron prediichas correctamente.
+
+Luis Angel: La matriz de confusion muestra que clasificó correctamente las flores el modelo, no se equivocó en ninguna, pero debemos checar si no hay sobreajuste.
